@@ -1,0 +1,29 @@
+{
+  "inbounds": [
+    {
+      "port": 8388,
+      "listen": "0.0.0.0",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "0b9b45ae-3cc4-4904-8ca0-f0476bdc7cd2",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/ray"  // WebSocket 路径，需与 Cloudflare 保持一致
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
